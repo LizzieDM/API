@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 13-feb-2014 18:05:57 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="domain.CallesUll" table="CALLES_ULL">
+        <composite-id name="id" class="domain.CallesUllId">
+            <key-property name="codmun" type="string">
+                <column name="CODMUN" length="20" />
+            </key-property>
+            <key-property name="codviamuni" type="string">
+                <column name="CODVIAMUNI" length="20" />
+            </key-property>
+            <key-property name="tvian" type="string">
+                <column name="TVIAN" length="20" />
+            </key-property>
+            <key-property name="digitocontrol" type="string">
+                <column name="DIGITOCONTROL" length="4" />
+            </key-property>
+            <key-property name="nombrelargo" type="string">
+                <column name="NOMBRELARGO" length="200" />
+            </key-property>
+            <key-property name="nombrecorto" type="string">
+                <column name="NOMBRECORTO" length="100" />
+            </key-property>
+            <key-property name="codigoine" type="string">
+                <column name="CODIGOINE" length="20" />
+            </key-property>
+            <key-property name="observaciones" type="clob">
+                <column name="OBSERVACIONES" />
+            </key-property>
+            <key-property name="activo" type="string">
+                <column name="ACTIVO" length="4" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

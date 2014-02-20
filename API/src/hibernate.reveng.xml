@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd" >
+
+<hibernate-reverse-engineering>
+  <table-filter match-name="CALLES_ULL"/>
+  <table-filter match-name="DOMICILIOS_ULL"/>
+  <table-filter match-name="ESTUDIOS_ULL"/>
+  <table-filter match-name="HABITANTES_ULL"/>
+  <table-filter match-name="T_VIAS_ULL"/>
+  <table-filter match-name="VIVIENDAS_ULL"/>
+</hibernate-reverse-engineering>

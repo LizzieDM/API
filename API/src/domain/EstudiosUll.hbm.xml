@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 13-feb-2014 18:05:57 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="domain.EstudiosUll" table="ESTUDIOS_ULL">
+        <composite-id name="id" class="domain.EstudiosUllId">
+            <key-property name="codmun" type="string">
+                <column name="CODMUN" length="20" />
+            </key-property>
+            <key-property name="codigoEst" type="string">
+                <column name="CODIGO_EST" length="20" />
+            </key-property>
+            <key-property name="nivelEst" type="string">
+                <column name="NIVEL_EST" length="4" />
+            </key-property>
+            <key-property name="codigoIne" type="string">
+                <column name="CODIGO_INE" length="8" />
+            </key-property>
+            <key-property name="codigoIstac" type="string">
+                <column name="CODIGO_ISTAC" length="8" />
+            </key-property>
+            <key-property name="descripcion" type="string">
+                <column name="DESCRIPCION" length="160" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

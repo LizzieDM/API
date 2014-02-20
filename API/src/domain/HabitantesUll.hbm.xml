@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 13-feb-2014 18:05:57 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="domain.HabitantesUll" table="HABITANTES_ULL">
+        <composite-id name="id" class="domain.HabitantesUllId">
+            <key-property name="codmun" type="string">
+                <column name="CODMUN" length="20" />
+            </key-property>
+            <key-property name="hojapad" type="string">
+                <column name="HOJAPAD" length="40" />
+            </key-property>
+            <key-property name="sexo" type="string">
+                <column name="SEXO" length="4" />
+            </key-property>
+            <key-property name="fechanacim" type="date">
+                <column name="FECHANACIM" length="7" />
+            </key-property>
+            <key-property name="codigoEst" type="string">
+                <column name="CODIGO_EST" length="20" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

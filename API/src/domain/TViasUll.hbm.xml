@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 13-feb-2014 18:05:57 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="domain.TViasUll" table="T_VIAS_ULL">
+        <composite-id name="id" class="domain.TViasUllId">
+            <key-property name="tvian" type="string">
+                <column name="TVIAN" length="20" />
+            </key-property>
+            <key-property name="nombre" type="string">
+                <column name="NOMBRE" length="100" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

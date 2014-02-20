@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 13-feb-2014 18:05:57 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="domain.DomiciliosUll" table="DOMICILIOS_ULL">
+        <composite-id name="id" class="domain.DomiciliosUllId">
+            <key-property name="codmun" type="string">
+                <column name="CODMUN" length="20" />
+            </key-property>
+            <key-property name="idvianum" type="string">
+                <column name="IDVIANUM" length="1020" />
+            </key-property>
+            <key-property name="codviamuni" type="string">
+                <column name="CODVIAMUNI" length="20" />
+            </key-property>
+            <key-property name="codigopseudo" type="string">
+                <column name="CODIGOPSEUDO" length="20" />
+            </key-property>
+            <key-property name="numero" type="string">
+                <column name="NUMERO" length="16" />
+            </key-property>
+            <key-property name="duplic" type="string">
+                <column name="DUPLIC" length="4" />
+            </key-property>
+            <key-property name="kilometro" type="string">
+                <column name="KILOMETRO" length="20" />
+            </key-property>
+            <key-property name="distrito" type="string">
+                <column name="DISTRITO" length="8" />
+            </key-property>
+            <key-property name="seccion" type="string">
+                <column name="SECCION" length="12" />
+            </key-property>
+            <key-property name="entidadCol" type="string">
+                <column name="ENTIDAD_COL" length="8" />
+            </key-property>
+            <key-property name="entidadSin" type="string">
+                <column name="ENTIDAD_SIN" length="8" />
+            </key-property>
+            <key-property name="digitoEntSin" type="string">
+                <column name="DIGITO_ENT_SIN" length="4" />
+            </key-property>
+            <key-property name="codigoNucleo" type="string">
+                <column name="CODIGO_NUCLEO" length="8" />
+            </key-property>
+            <key-property name="sector" type="string">
+                <column name="SECTOR" length="8" />
+            </key-property>
+            <key-property name="manzana" type="string">
+                <column name="MANZANA" length="28" />
+            </key-property>
+            <key-property name="plano" type="string">
+                <column name="PLANO" length="28" />
+            </key-property>
+            <key-property name="codpostal" type="string">
+                <column name="CODPOSTAL" length="20" />
+            </key-property>
+            <key-property name="geocodigo" type="string">
+                <column name="GEOCODIGO" length="60" />
+            </key-property>
+            <key-property name="segmento" type="string">
+                <column name="SEGMENTO" length="60" />
+            </key-property>
+            <key-property name="refCatastral" type="string">
+                <column name="REF_CATASTRAL" length="56" />
+            </key-property>
+            <key-property name="asignadoVct" type="string">
+                <column name="ASIGNADO_VCT" length="4" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>
